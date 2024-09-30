@@ -1,10 +1,25 @@
 from flask import Flask, render_template
-app = Flask(__name__)                       
+from flask_wtf import FlaskForm
+from wtforms import StringField, SubmitField
+from wtforms.validators import DataRequired
+
+app = Flask(__name__)
+app.config['SECRET_KEY'] = 'hard to guess string'                       
 # importing a flask object to create our app
-@app.route('/')
+
+class NameForm(FlaskForm):
+    name = StringField("What is your name?", validators =[DataRequired()])
+    submit = SubmitField('Submit')
+
+@app.route('/', methods=['GET','POST'])
 def index():
-    comments = ["comment1","comment2","comment3","comment4","comment5"]
-    return render_template('index.html', comments = comments)             
+    name = None
+    form = NameForm()
+    if form.validate_on_submit():
+        name = form.name.data
+        form.name.data = ''
+    comments = ['Card' , 'User']            
+    return render_template('index.html' , comments = comments, form = form, name = name)
 # routes the '/' page to our index page
 @app.route('/user/<name>')
 def user(name):
