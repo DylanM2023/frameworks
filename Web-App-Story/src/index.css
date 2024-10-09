@@ -1,0 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Podkova:wght@400..800&family=Zen+Antique&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
