@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: antiquewhite;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    font-size: x-large;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: aqua;
+}
+
+nav h1 {
+    flex-grow: 1;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.username-entry, .password-entry, .submit-button {
+    padding: 5px;
+    font-size: x-large;
+}
+
+footer {
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
