@@ -3,7 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, SubmitField
-from wtforms.validators import InputRequired, Length, ValidationError
+from wtforms.validators import InputRequired, Length, ValidationError, Regexp, EqualTo, Email
+import email_validator
 from flask_bcrypt import Bcrypt
 import os
 
@@ -26,15 +27,22 @@ def load_user(user_id):
 class User(db.Model, UserMixin):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key = True)
+    email = db.Column(db.String(64), nullable = False)
     username = db.Column(db.String(20), nullable = False, unique = True)
     password = db.Column(db.String(80), nullable = False)
 
 class RegistrationForm(FlaskForm):
+    email = StringField(validators=[InputRequired(), Length(
+        min = 4, max = 64), Email()], render_kw={"placeholder":"Email"})
     username = StringField(validators=[InputRequired(), Length(
         min = 4, max=20)], render_kw={"placeholder": "Username"})
     password = PasswordField(validators=[InputRequired(), Length(
-        min = 4, max = 20)], render_kw={"placeholder": "Password"})
+        min = 4, max = 20), EqualTo ('password2', message='Passwords must match')], render_kw={"placeholder": "Password"})
+    password2 = PasswordField(validators=[InputRequired(), Length(
+        min = 4, max = 20)], render_kw={"placeholder":"Confirm Password"})
+
     submit = SubmitField("Register")
+
 
     def validate_username(self, username):
         existing_user_username = User.query.filter_by(
@@ -85,12 +93,20 @@ def register():
 
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data)
-        new_user = User(username = form.username.data,password = hashed_password)
+        new_user = User(email=form.email.data, username = form.username.data,password = hashed_password)
         db.session.add(new_user)
         db.session.commit()
         return redirect(url_for('login'))
 
     return render_template('register.html', form = form)
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return render_template('500.html'), 500
 
 with app.app_context():
     db.create_all()

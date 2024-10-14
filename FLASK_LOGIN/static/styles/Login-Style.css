@@ -6,7 +6,7 @@
 
 nav {
     background-color: black;
-    color: antiquewhite;
+    color: whitesmoke;
     display: flex;
     align-items: center;
     padding: 10px 15px;
@@ -37,13 +37,18 @@ body {
 
 .username-entry, .password-entry, .submit-button {
     padding: 5px;
+    margin-top: 20px;
     font-size: x-large;
 }
 
+.sign-up {
+    text-decoration: none;
+    color: black;
+}
+
 footer {
-    background-color: black;
-    color: antiquewhite;
-    text-align: center;
+    color: black;
+    font-size: large;
     padding: 10px;
     position: fixed;
     bottom: 0;
