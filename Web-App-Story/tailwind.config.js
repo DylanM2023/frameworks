@@ -21,7 +21,9 @@ export default {
         body: ["Cabin", "sans-serif"],
         Japanese: ["Zen Antique", "serif"]
       },
-
+    animation:{
+      slowspin: "spin 100s linear infinite"
+    },
       colors: {
         azure: {
           100:"hsl(215 97.1% 79%)",

@@ -5,14 +5,14 @@ const  App = () => {
 
   // Logic
   return (
-    <body className="bg-grey-300">
+    <body className="bg-grey-300 animate-slowspin">
       <div>
         <NavBar />
         <div className="p-10 sm:bg-azure-200 md:bg-azure-300 xl:bg-azure-400 2xl:azure500">1</div>
         <div className="p-10 bg-azure-200 animate-pulse">2</div>
-        <div className="p-10 bg-azure-300">3</div>
+        <div className="p-10 bg-azure-300 animate-ping">3</div>
         <div className="p-10 bg-azure-400">4</div>
-        <div className="p-10 bg-azure-500">5</div>
+        <div className="p-10 bg-azure-500 animate-bounce">5</div>
         <div className="content">
           {/* <BlogPreview />
           <BlogPreview /> */}
