@@ -4,12 +4,12 @@ import NavBar from "./components/NavBar";
 const  App = () => {
 
   // Logic
-  return ( 
+  return (
     <body className="bg-grey-300">
       <div>
         <NavBar />
         <div className="p-10 sm:bg-azure-200 md:bg-azure-300 xl:bg-azure-400 2xl:azure500">1</div>
-        <div className="p-10 bg-azure-200">2</div>
+        <div className="p-10 bg-azure-200 animate-pulse">2</div>
         <div className="p-10 bg-azure-300">3</div>
         <div className="p-10 bg-azure-400">4</div>
         <div className="p-10 bg-azure-500">5</div>
@@ -27,7 +27,6 @@ const  App = () => {
         <div className="border-color-azure-500 border-2">6</div>
       </div> */}
     </body>
-  );
-}
+    )}
 
 export default App;

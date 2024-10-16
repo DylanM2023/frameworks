@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/Login-Style.css') }}">
+    <title>Login</title>
+</head>
+
+<nav>
+    <h1 class="nav-title">Login Page</h1>   
+    <a href="/">Home</a>
+    <a href="{{url_for('register')}}" class="register">Register Page</a>
+</nav>
+
+<body>
+    <div class="login-form">
+        <form method="POST" action="">
+            {{form.hidden_tag()}}
+            <div class="username-entry">
+            <h1>Username</h1>
+            {{form.username}}
+            </div>
+            <div class="password-entry">
+            <h1>Password</h1>
+                {{form.password}}
+            </div>
+            <div class="submit-button">
+                {{form.submit}}
+            </div>
+        </form>
+        <a href="{{url_for('register')}}" class="sign-up">Don't Have an Account? Siqn up.</a>
+    </div>
+</body>
+
+<footer>
+    <h6>Copyright &copy; Dylan Middleton ミドルトン・ディラン </h6>
+</footer>
+
+</html>
