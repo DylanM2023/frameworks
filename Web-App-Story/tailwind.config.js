@@ -19,7 +19,8 @@ export default {
       fontFamily: {
         heading: ["Podkova", "serif"],
         body: ["Cabin", "sans-serif"],
-        Japanese: ["Zen Antique", "serif"]
+        Japanese: ["Zen Antique", "serif"],
+        typewriter: ["Special Elite", "sans-serif"],
       },
     animation:{
       slowspin: "spin 100s linear infinite"
