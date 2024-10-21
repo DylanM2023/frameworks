@@ -1,25 +1,29 @@
-import BlogPreview from "./components/BlogPreview";
+import Home from "./home.jsx";
+import BlogDetails from "./BlogDetails.jsx"
 // import NavBar from "./components/NavBar";
+import About from "./About.jsx";
 import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route} from "react-router-dom" 
 import useFetch from "./hooks/useFetch.js"
+import PageError from "./404.jsx";
+
 const  App = () => {
 
-  const {data, isPending, isError} = useFetch("https://dummyjson.com/posts");
-
   return ( 
-    <div className="bg-blue-300">
-      <div className="content">
-        <a href="https://github.com/DylanM2023/frameworks/" target="_blank">GitHub</a>
-        {isPending && <p>Loading...</p>}
-        {data && data.posts.map((l) => (
-            <BlogPreview lesson={l} key = {l.id}/>
-          ))
-        }
-        {isError && <p>ERROR COULDN'T GET DATA</p>}
-
-        {/* <BlogPreview /> */}
-      </div>
-    </div>
+      <BrowserRouter>
+        <div>
+          <Routes>
+            //Home Path
+            <Route path="/" element={<Home/>}/>
+            //About us path
+            <Route path="/about" element={<About/>}/>
+            //Blog Details
+            <Route path="/blog/:id" element={<BlogDetails/>}/>
+            //Error Routing
+            <Route path="*" element={<PageError/>}/>
+          </Routes>
+        </div>
+      </BrowserRouter>
   );
 }
 

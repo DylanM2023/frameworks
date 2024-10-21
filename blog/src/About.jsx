@@ -1,0 +1,11 @@
+
+const About = () => {
+    return (
+        <>
+        <h1>This is the about page</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui optio ab laborum vel nam voluptatibus earum deleniti magnam incidunt ipsa quam debitis voluptate delectus alias libero molestias architecto accusantium blanditiis sunt, laudantium consectetur atque mollitia eos. Corrupti aliquam porro obcaecati dolor necessitatibus nisi officia non, cum totam cupiditate officiis magni a ab, excepturi quae cumque suscipit iure numquam voluptates, qui doloremque tempora! Quam repellendus rem rerum temporibus, corrupti, sed ipsa qui alias molestias, doloremque aspernatur? Voluptas optio voluptatem magni aperiam excepturi consequuntur numquam vitae. Error voluptas, facere accusantium totam soluta ex ab? Quae mollitia dolore nobis at omnis aliquam totam! Veniam eaque nulla quos, vel error blanditiis corporis sunt corrupti, autem delectus inventore. Officia facilis facere repellat rem. Ad quibusdam voluptates blanditiis repellat? Facere possimus necessitatibus nobis earum quasi fugiat veritatis eveniet, recusandae saepe cupiditate dicta delectus sapiente quod deleniti vel, voluptate odio dolorem quaerat tenetur vitae ipsa omnis? Neque repellendus earum temporibus iste fuga asperiores, ipsa sequi, culpa suscipit at cupiditate error dolore officiis incidunt dicta ab? Explicabo molestias quam expedita culpa suscipit, est nostrum! Voluptate quae doloribus id provident, ducimus sequi facere optio cupiditate eaque repudiandae natus delectus maxime deserunt distinctio fugit consequatur excepturi impedit maiores! Fugiat consequuntur laudantium rem fugit odit, doloremque numquam voluptatibus rerum tempore voluptatum? Tenetur, aut eos placeat rem suscipit cum qui incidunt consequatur hic tempora fugit obcaecati dolorem mollitia impedit. Corporis culpa nulla blanditiis excepturi deleniti debitis nisi nemo quibusdam. Cum, nesciunt iste sint rerum laudantium et deserunt, magnam soluta enim eligendi non?</p>
+        </>
+    );
+}
+
+export default About;
