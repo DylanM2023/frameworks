@@ -13,18 +13,19 @@ export default {
       lg: "1280px",
       xl: "1440px",
     },
-    
-
     extend: {
       fontFamily: {
         heading: ["Podkova", "serif"],
         body: ["Cabin", "sans-serif"],
         Japanese: ["Zen Antique", "serif"],
         typewriter: ["Special Elite", "sans-serif"],
+        },
+      backgroundImage: {
+          streetscene: "url('./assets/background.jpg')"
+        },
+      animation:{
+        slowspin: "spin 100s linear infinite"
       },
-    animation:{
-      slowspin: "spin 100s linear infinite"
-    },
       colors: {
         azure: {
           100:"hsl(215 97.1% 79%)",
@@ -47,7 +48,7 @@ export default {
           300: "hsl(0 0% 21.8%)",
           400: "hsl(0 0% 31.8%)",
           500: "hsl(0 0% 41.8%)",
-        }
+        },
       },
     },
   },
