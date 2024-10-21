@@ -19,9 +19,12 @@ export default {
       fontFamily: {
         heading: ["Podkova", "serif"],
         body: ["Cabin", "sans-serif"],
-        Japanese: ["Zen Antique", "serif"]
+        Japanese: ["Zen Antique", "serif"],
+        typewriter: ["Special Elite", "sans-serif"],
       },
-
+    animation:{
+      slowspin: "spin 100s linear infinite"
+    },
       colors: {
         azure: {
           100:"hsl(215 97.1% 79%)",
@@ -30,6 +33,21 @@ export default {
           400:"hsl(215 97.1% 49%)",
           500:"hsl(215 97.1% 39%)",
         },
+        cyan: {
+          100: "hsl(186 100% 75.3%)",
+          200: "hsl(186 100% 65.3%)",
+          300: "hsl(186 100% 55.3%)",
+          400: "hsl(186 100% 45.3%)",
+          500: "hsl(186 100% 35.3%)",
+        },
+
+        grey: {
+          100: "hsl(0 0% 01.8%)",
+          200: "hsl(0 0% 11.8%)",
+          300: "hsl(0 0% 21.8%)",
+          400: "hsl(0 0% 31.8%)",
+          500: "hsl(0 0% 41.8%)",
+        }
       },
     },
   },
