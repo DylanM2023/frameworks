@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect, g
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import UserMixin, login_user, LoginManager, login_required, logout_user, current_user
 from flask_wtf import FlaskForm
@@ -31,6 +31,12 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(20), nullable = False, unique = True)
     password = db.Column(db.String(80), nullable = False)
 
+class Comments(db.Model, UserMixin):
+    __tablename__ = 'comments'
+    index = db.Column(db.Integer, primary_key = True)
+    id = db.Column(db.Integer, nullable = False)
+    comment = db.Column(db.String(64), nullable = False)
+
 class RegistrationForm(FlaskForm):
     email = StringField(validators=[InputRequired(), Length(
         min = 4, max = 64), Email()], render_kw={"placeholder":"Email"})
@@ -42,7 +48,6 @@ class RegistrationForm(FlaskForm):
         min = 4, max = 20)], render_kw={"placeholder":"Confirm Password"})
 
     submit = SubmitField("Register")
-
 
     def validate_username(self, username):
         existing_user_username = User.query.filter_by(
@@ -60,6 +65,10 @@ class LoginForm(FlaskForm):
         min = 4, max = 20)], render_kw={"placeholder": "Password"})
     submit = SubmitField("Login")
 
+class CommentForm(FlaskForm):
+    comment = StringField(validators=[InputRequired(), Length(
+        min = 4, max = 64)])
+    submit = SubmitField("Post")
 
 @app.route('/')
 def home():
@@ -69,6 +78,19 @@ def home():
 @login_required
 def dashboard():
     return render_template('dashboard.html')
+
+@app.route('/comments', methods = ["GET","POST"])
+@login_required
+def comments():
+    form = CommentForm()
+    if form.validate_on_submit():
+        g.user = current_user.get_id()
+        new_comment = Comments(comment = form.comment.data, id=g.user)
+        db.session.add(new_comment)
+        db.session.commit()
+        return redirect(url_for('dashboard'))
+    return render_template('comment.html', form=form)
+
 
 @app.route('/login', methods = ["GET","POST"])
 def login():

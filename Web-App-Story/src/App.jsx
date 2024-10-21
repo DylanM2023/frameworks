@@ -7,7 +7,15 @@ const  App = () => {
       <body>
         <div className="bg-streetscene bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
           <NavBar/>
-          <div className="bg-white w-8/12 h-4/6 font-typewriter text-black text-2xl flex flex-wrap justify-center items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima alias, omnis soluta cum quos harum. Facilis minus fugit accusantium eos deserunt quae quo saepe nostrum consequatur ut sequi illum ratione esse laborum odio quos, ex vel, voluptates magni et praesentium repellat iure nihil? Inventore aliquid atque veritatis recusandae, doloremque illo odio ducimus, soluta aut provident quo? Natus a quidem possimus aspernatur quis atque voluptatem quod! Necessitatibus quibusdam impedit quidem magnam consectetur optio molestiae assumenda autem adipisci id neque sed dolores, distinctio sunt aspernatur vitae at expedita maiores velit? Odit enim quaerat ratione natus libero excepturi quis saepe eum debitis dolorem!</div>
+          <div className="bg-white w-8/12 h-3/6 font-typewriter text-black text-2xl flex flex-wrap"> 
+          <h1>21'st October 1943</h1>
+          <p className="p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi temporibus provident animi vero numquam quam, rem beatae eligendi cum odio non deserunt, officiis laborum voluptatibus facere quo optio molestiae! Eos sit quam cum quas qui expedita labore numquam velit, dolore quod eligendi facere illum itaque minima odio repellendus atque?</p>
+          </div>
+          <div className="w-8/12 bg-slate-50 flex justify-center ">
+            <button className="w-2/6 bg-slate-400">Option 1</button>
+              <div className="bg-black w-2/6"></div>
+            <button className="w-2/6 bg-slate-400">Option 1</button>
+          </div>
         </div>
       </body>
       </>
