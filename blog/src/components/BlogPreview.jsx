@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const BlogPreview = ({lesson, handledelete}) => {
+const BlogPreview = ({lesson}) => {
     
     return (
         <> 
@@ -26,4 +26,4 @@ const BlogPreview = ({lesson, handledelete}) => {
     );
 }
 
-export default BlogPreview ;
+export default BlogPreview;
