@@ -8,7 +8,7 @@ const Menu = () => {
     const startGame = () => {
         navigate("/option");
     };
-
+    
     return ( 
         <>
             <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-col flex-wrap items-center"> 
@@ -23,7 +23,7 @@ const Menu = () => {
                     <div className="bg-black h-1/6 w-full text-black border-4 border-white flex flex-wrap flex-col items-center rounded-xl p-1">
                         <a className="flex flex-row bg-black text-white grow justify-center items-center text-5xl p-1 w-full" href="https://github.com/DylanM2023/frameworks/" target="_blank">GitHub</a>
                     </div>
-                    <button className="bg-black border-4 border-white h-1/6 w-full text-white rounded-xl p-1">Exit</button>
+                    <a className="bg-black border-4 border-white flex flex-row h-1/6 w-full justify-center items-center text-white rounded-xl p-1" href="https://google.com">Exit</a>
                 </div>
             </div>
         </>
