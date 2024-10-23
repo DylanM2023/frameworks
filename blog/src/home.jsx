@@ -9,7 +9,7 @@ const  Home = () => {
     return ( 
         <>
         <NavBar/>
-        <div className="bg-blue-300">
+        <div className="bg-white">
             <div className="content">
                 {isPending && <p>Loading...</p>}
                 {data && data.posts.map((l) => (

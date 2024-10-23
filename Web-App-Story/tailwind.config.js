@@ -21,7 +21,8 @@ export default {
         typewriter: ["Special Elite", "sans-serif"],
         },
       backgroundImage: {
-          streetscene: "url('./assets/background.jpg')"
+          streetscene: "url('./assets/background.jpg')",
+          skyline: "url('./assets/skyline.jpg')",
         },
       animation:{
         slowspin: "spin 100s linear infinite"
@@ -49,6 +50,13 @@ export default {
           400: "hsl(0 0% 31.8%)",
           500: "hsl(0 0% 41.8%)",
         },
+        
+        Sepia: "#704214",
+        Cream: "#FDFBD4",
+        Offwhite: "#FAF9F6",
+        Beige: "#F5F5DC",
+        Paperwhite: "#E1E1DD",
+        
       },
     },
   },

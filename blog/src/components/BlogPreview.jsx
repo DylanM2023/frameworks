@@ -6,19 +6,11 @@ const BlogPreview = ({lesson}) => {
         <> 
         <Link to={"/blog/" + lesson.id}>
         <section>
-            <div className="flex p-4">
-                <h2 className="bg-slate-500 text-white text-xl font-bold p-4 w-9/12">{lesson.title}</h2>
-                <p className="bg-slate-500">
-                    <div className="text-black w-1/12">
-                        {lesson.views}
-                    </div> 
-                    <div className="text-green-500 w-1/12">
-                        {lesson.reactions.likes}
-                    </div>
-                    <div className="text-red-600 w-1/12">
-                        {lesson.reactions.dislikes}
-                    </div>
-                </p>
+            <div className="flex p-4 bg-slate-700">
+                <h2 className="  text-white text-xl font-bold p-2 w-9/12 flex flex-row grow">{lesson.title}</h2>
+                <h3 className="p-2">{lesson.views}</h3>
+                <h4 className="text-green-400 p-2">{lesson.reactions.dislikes}</h4>
+                <h5 className="text-red-400 p-2">{lesson.reactions.likes}</h5>
             </div>
         </section>
         </Link>
