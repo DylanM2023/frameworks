@@ -19,10 +19,10 @@ const BlogDetails = () => {
     return (
         <>
         {data &&(
-            <>
-            <h1 className="text-5xl">{data.title}</h1>
-            <p className="p-4">{data.body}</p>
-            </>
+            <body className="bg-slate-700 h-screen">
+                <h1 className="text-5xl h-16 bg-black text-white flex grow justify-center">{data.title}</h1>
+                <p className="p-4 text-white text-3xl bg-slate-700 flex flex-col grow">{data.body}</p>
+            </body>
         )}
         </>
     );
