@@ -86,6 +86,7 @@ def comments():
     if form.validate_on_submit():
         g.user = current_user.get_id()
         new_comment = Comments(comment = form.comment.data, id=g.user)
+        # current_user.get_current.object()
         db.session.add(new_comment)
         db.session.commit()
         return redirect(url_for('dashboard'))
