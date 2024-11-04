@@ -2,7 +2,6 @@ const data = {
     beginning: {
         title_text: "November 4th 1947,",
         body_text: "Cold winter night, girl stabbed shock, gasp , OMG!",
-
         option_text_1: "Friend",
         option_1_path: "friend_convo",
         option_text_2: "Builder",
