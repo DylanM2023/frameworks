@@ -35,10 +35,39 @@ const data = {
     },
     business_convo: {
         title_text: "November 4th 1947, 02:08AM",
-        body_text: "'Business Man walks into office and takes a seat, visibly unimpressed' ",
-        option_text_1: "No further Path",
-        option_1_path: "teenager_convo",
-        option_text_2: "No further Path",
+        body_text: [
+                    "INTERVIEW 1: The first interview is with Mathew. Mathew is an impatient business man how seems to care more about money than solving this case.",
+                    "TRANSCRIPT: 02:09AM: Mathew (visibly unimpressed) asks 'How long is this is going to take?' 02:09AM You respond'depends how quickly you answer my questions'",
+                    "NOTES: "
+                    ],
+        option_text_1: "Did you see anything Suspicious?",
+        option_1_path: "business_man_clear",
+        option_text_2: "How come a man like you, took the train?",
+        option_2_path: "business_man_sus",
+    },
+
+    business_man_clear_1: {
+        title_text: "November 4th 1947, 02:08AM",
+        body_text: [
+                    "INTERVIEW 1: The first interview is with Mathew. Mathew is an impatient business man how seems to care more about money than solving this case.",
+                    "TRANSCRIPT: 02:09AM: Mathew (visibly unimpressed) asks 'How long is this is going to take?' 02:09AM You respond'depends how quickly you answer my questions'",
+                    "NOTES: "
+                    ],
+        option_text_1: "Did you see anything Suspicious?",
+        option_1_path: "business_man_sees",
+        option_text_2: "How come a man like you, took the train?",
+        option_2_path: "old_woman_convo",   
+    },
+    business_man_sus_1: {
+        title_text: "November 4th 1947, 02:08AM",
+        body_text: [
+                    "INTERVIEW 1: The first interview is with Mathew. Mathew is an impatient business man how seems to care more about money than solving this case.",
+                    "TRANSCRIPT: 02:09AM: Mathew (visibly unimpressed) asks 'How long is this is going to take?' 02:09AM You respond'depends how quickly you answer my questions'",
+                    "NOTES: "
+                    ],
+        option_text_1: "Did you see anything Suspicious?",
+        option_1_path: "business_man_sees",
+        option_text_2: "How come a man like you, took the train?",
         option_2_path: "old_woman_convo",
     },
     teenager_convo: {
