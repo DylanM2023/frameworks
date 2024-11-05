@@ -1,7 +1,11 @@
 const data = {
     beginning: {
         title_text: "November 4th 1947  02:00AM ",
-        body_text: "Victim: Sharon Livingston, female approximately 5 ft 2 with long blonde hair and blue eyes. Evidence: No autopsy performed yet, but from on-the-scene officers fatality seemed to be derived from a deep gash on her side, of which caused excessive bleeding.The bleeding being the cause of death is supported by the crimson new flair left on her blue coat.Notes: The Chief is in his usual lazy mood and doesn’t want to “Waste good officers on a case that lacks importance”. Due to our leader’s familiar incompetence this case has been passed around the office like a hot potato. However, as the greatest, most talented and undoubtedly the most dashing detective in the office, do you think that you could solve this case in only 2 hours? I guess it's all up to you on whether you dismiss this case or … Dig a Little Deeper.",
+        body_text: ["Victim: Sharon Livingston, female approximately 5 ft 2 with long blonde hair and blue eyes. Wearing a large blue coat and a pearl necklace.",
+                    "Evidence: No autopsy performed yet, but from on the scene officers fatality seemed to be derived from a deep gash on her side, of which caused excessive bleeding.The bleeding being the cause of death is supported by the crimson new flair left on her blue coat.",
+                    "Notes: The Chief is in his usual lazy mood and doesn’t want to “Waste good officers on a case that lacks importance”. Due to our leader’s familiar incompetence this case has been passed around the office like a bad cold. I mean who would waste there time on a case if they only have 2 hours to solve it? So to whoever is reading this, I guess it's up to you whether you dismiss this case or... Dig a Little Bit Deeper.",
+                    ""
+                    ],
         option_text_1: "Dismiss",
         option_1_path: "dismiss",
         option_text_2: "Dig a little deeper?",

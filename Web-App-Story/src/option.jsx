@@ -14,7 +14,7 @@ const  Option = () => {
     const choice_button = (path) =>{
         if (path === null) {
             // navigate end
-            navigate('/');
+            navigate('/end-screen');
         }
         else {
             setNewText(data[path]);
@@ -29,8 +29,14 @@ return (
                     <h1 className="w-full px-8 py-6 text-3xl">
                     {newText.title_text}
                     </h1>
-                    <p className="flex w-full px-8 py-6 text-3xl">
-                    {newText.body_text}
+                    <p className="w-full px-8 text-3xl">
+                    {newText.body_text[0]}
+                    </p>
+                    <p className="w-full px-8 text-3xl">
+                        {newText.body_text[1]}
+                    </p>
+                    <p className="w-full px-8 text-3xl">
+                        {newText.body_text[2]}
                     </p>
                 </div>
                 <div className="w-8/12 p-4 flex justify-center ">
