@@ -51,16 +51,16 @@ const data = {
     },
 
     mathew_teen_1: {
-        title_text: "November 4th 1947, 02:19AM",
+        title_text: "November 4th 1947, 02:23AM",
         body_text: [
                     "TRANSCRIPT: You ask:'Did you see anything suspicious?' Mathew responds:'Not really. I was super tired and barely made it to my stop. Although...', You say:'Go on...' Mathew:'Well there was this teenager who seemed... odd.'",
                     "You ask:'Odd, how?', Mathew responds:'Well he was running away but he seemed more scared. Whether that is because he had commited a crime or witnessed it, I am not sure.' You respond:'Thank you Mathew, that will be all for now.'",
                     "NOTES: Mathew seems a bit too eager to leave. This teenager seems like a possible suspect, I should probably investigate further. "
                     ],
-        option_text_1: "Did he seem dangerous?",
-        option_1_path: "mathew_clear_2",
-        option_text_2: "Why did he seem odd?",
-        option_2_path: "mathew_teen_1",
+        option_text_1: "Leave Mathew",
+        option_1_path: null,
+        option_text_2: "Leave Mathew",
+        option_2_path: null,
     },
 
     mathew_clear_2: {
@@ -73,7 +73,20 @@ const data = {
         option_text_1: "Did he appear armed?",
         option_1_path: "mathew_clear_3",
         option_text_2: "Do you think he did it?",
-        option_2_path: "mathew_teen_1",   
+        option_2_path: "mathew_teen_2",   
+    },
+
+    mathew_teen_2: {
+        title_text: "November 4th 1947, 02:19AM",
+        body_text: [
+                    "TRANSCRIPT: You ask:'Did you see anything suspicious?' Mathew responds:'Not really. I was super tired and barely made it to my stop. Although...', You say:'Go on...' Mathew:'Well there was this teenager who seemed... odd.'",
+                    "You ask:'Do you think he did it?' Mathew responds:'Well obviously I have no further proof, but I would say he definitely doesn't seem innocent.' You respond:'Thank you Mathew, that will be all for now.'",
+                    "NOTES: Mathew seems a bit too eager to leave. This teenager seems like a possible suspect, I should probably investigate further. This teenager could've been fleeing a crime he commited."
+                    ],
+        option_text_1: "Leave Mathew",
+        option_1_path: null,
+        option_text_2: "Leave Mathew",
+        option_2_path: null, 
     },
 
     mathew_clear_3: {
