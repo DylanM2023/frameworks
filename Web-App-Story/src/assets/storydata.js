@@ -21,7 +21,7 @@ const data = {
         option_text_1: "Talk to Mathew",
         option_1_path: "mathew_convo",
         option_text_2: "Talk to Nancy",
-        option_2_path: "friend_convo",
+        option_2_path: "meet_nancy",
     },
 
     mathew_convo: {
@@ -192,6 +192,125 @@ const data = {
         option_text_2: "Leave Mathew",
         option_2_path: null, 
     },
+
+    meet_nancy: {
+        title_text: "November 4th 1947, 02:13AM",
+        body_text: [
+                    "INTERVIEW 1: The first interview is with Nancy. Nancy is the friend of the victim and she has been upset, incoherent and inconsistent with her story. Although she was with Nancy that night, she was mysteriously absent when Nancy died.",
+                    "TRANSCRIPT: Nancy is quiet and nervous. She hasn't spoken yet.",
+                    "NOTES:"
+                    ],
+        option_text_1: "Where were you when Sharon died?",
+        option_1_path: "dog_watching",
+        option_text_2: "Why would you leave your friend alone at night?",
+        option_2_path: "helping_out",
+    },
+
+    dog_watching: {
+        title_text: "November 4th 1947, 02:15AM",
+        body_text: [
+                    "TRANSCRIPT: Nancy is quiet and nervous. She hasn't spoken yet.",
+                    "You ask:'Where were you when Sharon died?', Nancy responds:'There was an old woman. She asked if I could watch her dog.'",
+                    "NOTES: The old woman is another suspect, could be important to find out more about her."
+                    ],
+        option_text_1: "Did you see anything odd whilst watching the woman's dog?",
+        option_1_path: "teenager_running",
+        option_text_2: "Why did the Old Lady need you to watch her dog?",
+        option_2_path: "where_is_lady?",
+    },
+
+    where_is_lady: {
+        title_text: "November 4th 1947, 02:19AM",
+        body_text: [
+                    "TRANSCRIPT: You ask:'Where were you when Sharon died?', Nancy responds:'There was an old woman. She asked if I could watch her dog.'",
+                    "You ask:'Why did the Old Lady need you to watch her dog?', Nancy responds:'She never actually said where she was going, only that she needed to go and couldn't take her dog with her.' ",
+                    "NOTES: The old woman is another suspect, could be important to find out more about her. Where could an old woman be going that late at night?"
+                    ],
+        option_text_1: "Do you think she could've had something to do with this?",
+        option_1_path: "sweet_granny",
+        option_text_2: "Did you see where she went?",
+        option_2_path: "back_alley_trouble",
+    },
+
+    sweet_granny: {
+        title_text: "November 4th 1947, 02:24AM",
+        body_text: [
+                    "TRANSCRIPT: You ask:'Why did the Old Lady need you to watch her dog?', Nancy responds:'She never actually said where she was going, only that she needed to go and couldn't take her dog with her.' ",
+                    "You ask:'Do you think she could've had something to do with this?' Nancy responds:'I mean she was quite old and sweet I doubt she is capable of such a thing.' You respond:'Thank you Nancy, that will be all for now.'",
+                    "NOTES: The old woman is another suspect, could be important to find out more about her. This teenager could be important, should find out more."
+                    ],
+        option_text_1: "Leave Nancy",
+        option_1_path: null,
+        option_text_2: "Leave Nancy",
+        option_2_path: null,
+    },
+
+    back_alley_trouble: {
+        title_text: "November 4th 1947, 02:24AM",
+        body_text: [
+                    "TRANSCRIPT: You ask:'Why did the Old Lady need you to watch her dog?', Nancy responds:'She never actually said where she was going, only that she needed to go and couldn't take her dog with her.' ",
+                    "You ask:'Did you see where she went?', Nancy responds:'She went off towards the back of the station, but there is nothing really back there...'",
+                    "NOTES: The old woman is another suspect, could be important to find out more about her. This teenager could be important, should find out more."
+                    ],
+        option_text_1: "Leave Nancy",
+        option_1_path: null,
+        option_text_2: "Leave Nancy",
+        option_2_path: null,
+    },
+
+    teenager_running: {
+        title_text: "November 4th 1947, 02:19AM",
+        body_text: [
+                    "TRANSCRIPT: You ask:'Where were you when Sharon died?', Nancy responds:'There was an old woman. She asked if I could watch her dog.'",
+                    "You ask:'Did you see anything odd whilst watching the woman's dog?', Nancy responds: 'I didn't see anything weird.. well except. There was this teenaged boy that was a bit, idk how to describe it.'",
+                    "NOTES: The old woman is another suspect, could be important to find out more about her. This teenager could be important, should find out more."
+                    ],
+        option_text_1: "Can you try to describe him?",
+        option_1_path: "expound",
+        option_text_2: "Do you think he could have something to do with this?",
+        option_2_path: "blatant_classism",
+    },
+
+    blatant_classism: {
+        title_text: "November 4th 1947, 02:24AM",
+        body_text: [
+                    "TRANSCRIPT: You ask:'Did you see anything odd whilst watching the woman's dog?', Nancy responds: 'I didn't see anything weird.. well except. There was this teenaged boy that was a bit, idk how to describe it.'",
+                    "You ask:'Do you think he could have something to do with this?', Nancy responds:'Well I mean... you know how the street kids are. I wouldn't put a violent crime past his capabilities.' You respond:'Okay Nancy, that will be all for now.'",
+                    "NOTES: The old woman is another suspect, could be important to find out more about her. This teenager could be important, should find out more."
+                    ],
+        option_text_1: "Leave Nancy",
+        option_1_path: null,
+        option_text_2: "Leave Nancy",
+        option_2_path: null,
+    },
+
+    expound: {
+        title_text: "November 4th 1947, 02:24AM",
+        body_text: [
+                    "TRANSCRIPT: You ask:'Did you see anything odd whilst watching the woman's dog?', Nancy responds: 'I didn't see anything weird.. well except. There was this teenaged boy that was a bit, idk how to describe it.'",
+                    "You ask:'Can you try to describe him?' Nancy responds:'At first I though he seemed scary and dangerous, but when I caught his eye... for a moment I could've sworn I saw a horrified little boy.' You respond:'Okay Nancy, that will be all for now.'",
+                    "NOTES: The old woman is another suspect, could be important to find out more about her. This teenager could be important, should find out more."
+                    ],
+                    option_text_1: "Leave Nancy",
+                    option_1_path: null,
+                    option_text_2: "Leave Nancy",
+                    option_2_path: null,
+    },
+
+    helping_out: {
+        title_text: "November 4th 1947, 02:15AM",
+        body_text: [
+                    "TRANSCRIPT: Nancy is quiet and nervous. She hasn't spoken yet.",
+                    "You ask:'Why would you leave your friend alone at night?', Nancy responds:'I went to go help someone, Sharon assured me she would be okay.'",
+                    "NOTES: Why leave her friend alone at night, seems strange."
+                    ],
+        option_text_1: "Why didn't Sharon go with you?",
+        option_1_path: "staying_back",
+        option_text_2: "Did you see anything odd that night?",
+        option_2_path: "vandalism",
+    },
+
+
 
 }
 
