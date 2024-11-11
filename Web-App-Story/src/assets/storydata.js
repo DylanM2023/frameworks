@@ -414,6 +414,32 @@ const data = {
         option_2_path: "delinquent_rises",
     },
 
+    delinquent_rises:{
+        title_text: "November 4th 1947, 02:45AM",
+        body_text: [
+                    "TRANSCRIPT: Karen:'I have never been interrogated before, It's quite exciting really.'",
+                    "You:'Did you see anything strange the night Sharon died.' Karen:'There was this delinquent. I am not trying to speculate but he seemed pretty dodgy to me.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
+                    ],
+        option_text_1: "Seemed dodgy?",
+        option_1_path: "vandalism_king",
+        option_text_2: "Do you think he killed Sharon?",
+        option_2_path: "speculation_nation",
+    },
+
+    vandalism_king:{
+        title_text: "November 4th 1947, 02:45AM",
+        body_text: [
+                    "TRANSCRIPT: Karen:'I have never been interrogated before, It's quite exciting really.'",
+                    "You:'Did you see anything strange the night Sharon died.' Karen:'There was this delinquent. I am not trying to speculate but he seemed pretty dodgy to me.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
+                    ],
+        option_text_1: "Seemed dodgy?",
+        option_1_path: "vandalism_king",
+        option_text_2: "Do you think he killed Sharon?",
+        option_2_path: "speculation_nation",
+    },
+
     shopping_spree:{
         title_text: "November 4th 1947, 02:45AM",
         body_text: [
