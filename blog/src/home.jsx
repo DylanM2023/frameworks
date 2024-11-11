@@ -1,9 +1,23 @@
 import useFetch from "./hooks/useFetch";
 import BlogPreview from "./components/BlogPreview"
 import NavBar from "./components/NavBar";
+import { useContext, useEffect } from "react";
+import { BlogContext } from "./App";
 
-const  Home = ({data, isPending, isError, handledelete}) => {
+const  Home = () => {
+    
+    const {blogs,dispatch} = useContext(BlogContext);
 
+    const {data, isPending, isError} = useFetch("https://dummyjson.com/posts");
+
+    useEffect(()=>{
+        try{
+        dispatch({type: "SET", payload: data.posts})
+        }
+        catch(e) {
+        console.log(e)
+        }
+    }, [data])
     
     return ( 
         <>

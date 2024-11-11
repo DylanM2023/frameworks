@@ -1,7 +1,15 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { BlogContext } from "../hooks/BlogContext";
 
-const BlogPreview = ({lesson, handledelete}) => {
+const BlogPreview = ({lesson}) => {
     
+    const {dispatch} = useContext(BlogContext);
+
+    function handledelete() {
+        dispatch({type: "DELETE", id: lesson.id})
+    }
+
     return (
 
         <> 
@@ -11,7 +19,7 @@ const BlogPreview = ({lesson, handledelete}) => {
                 {/* <h2 className="p-2">Views: {lesson.views}</h2>
                 <h2 className="text-green-400 p-2">Dislikes: {lesson.reactions.dislikes}</h2>
                 <h2 className="text-red-400 p-2">Likes: {lesson.reactions.likes}</h2> */}
-                <button className="text-red-500" onClick={() =>{handledelete(lesson.id)}}>DELETE</button>
+                <button className="text-red-500" onClick={handledelete}>DELETE</button>
             </div>
         </section>
         </>
@@ -19,3 +27,13 @@ const BlogPreview = ({lesson, handledelete}) => {
 }
 
 export default BlogPreview;
+
+export const useBlogContext = () =>{
+    const context = useContext(BlogContext);
+
+    if(!context){
+        throw Error("UseBlogContext cannot be used outside the BlogProvider component");
+    }
+
+    return context;
+}

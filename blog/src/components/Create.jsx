@@ -2,22 +2,23 @@ import { useState } from "react";
 import {v4 as uuid} from "uuid";
 import NavBar from "./NavBar";
 import { useNavigate } from "react-router-dom";
+import { useBlogContext } from "./BlogPreview";
 
-const Create = ({handlecreate}) => {
+const Create = () => {
 
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
     
     const navigate = useNavigate()
-
+    const {dispatch} = useBlogContext();
 
     function handleSubmit(e) {
         e.preventDefault();
-        handlecreate({
+        dispatch({type: "CREATE", payload: {
             id: uuid(), 
             title: title,
             body: body,
-        })
+        }});
         navigate("/")
     };
 
