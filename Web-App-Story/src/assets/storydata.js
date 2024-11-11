@@ -404,14 +404,105 @@ const data = {
     meet_karen: {
         title_text: "November 4th 1947, 02:39AM",
         body_text: [
-                    "INTERVIEW 2: ",
-                    "",
-                    "",
+                    "INTERVIEW 2: The second interview is with Karen. Karen is an older woman who was there that night. She is less of a suspect and more of a witness to gain more information.",
+                    "TRANSCRIPT: Karen:'I have never been interrogated before, It's quite exciting really.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
                     ],
-        option_text_1: "Why did you run away?",
-        option_1_path: "overwhelming_fear",
-        option_text_2: "What are you hiding?",
-        option_2_path: "leo_never_tells",
+        option_text_1: "Where were you?",
+        option_1_path: "shopping_spree",
+        option_text_2: "Did you see anything strange?",
+        option_2_path: "delinquent_rises",
+    },
+
+    shopping_spree:{
+        title_text: "November 4th 1947, 02:45AM",
+        body_text: [
+                    "TRANSCRIPT: Karen:'I have never been interrogated before, It's quite exciting really.'",
+                    "You:'Where were you when Sharon died?' Karen:'I went to the shops to buy some things. Had to leave my dog with the nice woman.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure. It was reported that Nancy was watching the woman's dog that night.",
+                    ],
+        option_text_1: "What did you buy?",
+        option_1_path: "treat_doggo",
+        option_text_2: "What store did you go to?",
+        option_2_path: "treat_purchase",
+    },
+
+    treat_doggo:{
+        title_text: "November 4th 1947, 02:53AM",
+        body_text: [
+                    "TRANSCRIPT: You:'Where were you when Sharon died?' Karen:'I went to the shops to buy some things. Had to leave my dog with the nice woman.'",
+                    "You:'What did you buy?', Karen:'I uhhh... well I went to buy some treats for my dog of course.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure. It was reported that Nancy was watching the woman's dog that night. Why leave the dog if you were buying dog treats.",
+                    ],
+        option_text_1: "Why would you leave your dog?",
+        option_1_path: "weak_response_2",
+        option_text_2: "Can you prove that?",
+        option_2_path: "prove_it_2",
+    },
+
+    treat_purchase:{
+        title_text: "November 4th 1947, 02:53AM",
+        body_text: [
+                    "TRANSCRIPT: You:'Where were you when Sharon died?' Karen:'I went to the shops to buy some things. Had to leave my dog with the nice woman.'",
+                    "You: What store did you go to?', Karen:'I uhhh... well I went to the pet shop to buys some treats for my dog.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure. It was reported that Nancy was watching the woman's dog that night. Why leave the dog if you were buying dog treats.",
+                    ],
+        option_text_1: "Why would you leave your dog?",
+        option_1_path: "weak_response_1",
+        option_text_2: "Can you prove that?",
+        option_2_path: "prove_it_1",
+    },
+
+    weak_response_1:{
+        title_text: "November 4th 1947, 02:57AM",
+        body_text: [
+                    "TRANSCRIPT: You: What store did you go to?', Karen:'I uhhh... well I went to the pet shop to buys some treats for my dog.'",
+                    "You: 'Why would you leave your dog if you were going to a pet shop?', Karen:'Well ummm, I guess I could've brought her haha. Old Age it makes you do weird things.' You:'Right... well that is all we have time for.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure. It was reported that Nancy was watching the woman's dog that night. Why leave the dog if you were buying dog treats. Pretty weak response from Karen.",
+                    ],
+        option_text_1: "Leave Karen",
+        option_1_path: null,
+        option_text_2: "Leave Karen",
+        option_2_path: null,
+    },
+
+    weak_response_2:{
+        title_text: "November 4th 1947, 02:57AM",
+        body_text: [
+                    "TRANSCRIPT: You:'What did you buy?', Karen:'I uhhh... well I went to buy some treats for my dog of course.'",
+                    "Why would you leave your dog?, Karen:'Well ummm, I guess I could've brought her haha. Old Age it makes you do weird things. You:'Right... well that is all we have time for.''",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure. It was reported that Nancy was watching the woman's dog that night. Why leave the dog if you were buying dog treats. Pretty weak response from Karen.",
+                    ],
+        option_text_1: "Leave Karen",
+        option_1_path: null,
+        option_text_2: "Leave Karen",
+        option_2_path: null,
+    },
+
+    prove_it_1:{
+        title_text: "November 4th 1947, 02:57AM",
+        body_text: [
+                    "TRANSCRIPT: You: What store did you go to?', Karen:'I uhhh... well I went to the pet shop to buys some treats for my dog.'",
+                    "You: 'Can you prove you were buying treats for your dog?', Karen:'Well ummm, I guess I can't. I didn't get a receipt or anything. Is that bad, should I have brought proof' You:'I am simply asking questions Karen, also that will be all for now.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure. It was reported that Nancy was watching the woman's dog that night. Why leave the dog if you were buying dog treats. Pretty weak response from Karen. Not much gained from that.",
+                    ],
+        option_text_1: "Leave Karen",
+        option_1_path: null,
+        option_text_2: "Leave Karen",
+        option_2_path: null,
+    },
+
+    prove_it_2:{
+        title_text: "November 4th 1947, 02:57AM",
+        body_text: [
+                    "TRANSCRIPT: You:'What did you buy?', Karen:'I uhhh... well I went to buy some treats for my dog of course.'",
+                    "You: 'Can you prove you were buying treats for your dog at the pet shop?', Karen:'Well ummm, I guess I can't. I didn't get a receipt or anything. Is that bad, should I have brought proof' You:'I am simply asking questions Karen, also that will be all for now.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure. It was reported that Nancy was watching the woman's dog that night. Why leave the dog if you were buying dog treats. Pretty weak response from Karen. Not much gained from that.",
+                    ],
+        option_text_1: "Leave Karen",
+        option_1_path: null,
+        option_text_2: "Leave Karen",
+        option_2_path: null,
     },
 
     meet_leo: {
