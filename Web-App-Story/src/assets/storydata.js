@@ -291,10 +291,10 @@ const data = {
                     "You ask:'Can you try to describe him?' Nancy responds:'At first I though he seemed scary and dangerous, but when I caught his eye... for a moment I could've sworn I saw a horrified little boy.' You respond:'Okay Nancy, that will be all for now.'",
                     "NOTES: The old woman is another suspect, could be important to find out more about her. This teenager could be important, should find out more."
                     ],
-                    option_text_1: "Leave Nancy",
-                    option_1_path: "new_witnesses",
-                    option_text_2: "Leave Nancy",
-                    option_2_path: "new_witnesses",
+        option_text_1: "Leave Nancy",
+        option_1_path: "new_witnesses",
+        option_text_2: "Leave Nancy",
+        option_2_path: "new_witnesses",
     },
 
     helping_out: {
@@ -430,8 +430,7 @@ const data = {
     vandalism_king:{
         title_text: "November 4th 1947, 02:45AM",
         body_text: [
-                    "TRANSCRIPT: Karen:'I have never been interrogated before, It's quite exciting really.'",
-                    "You:'Did you see anything strange the night Sharon died.' Karen:'There was this delinquent. I am not trying to speculate but he seemed pretty dodgy to me.'",
+                    "TRANSCRIPT: You:'Did you see anything strange the night Sharon died.' Karen:'There was this delinquent. I am not trying to speculate but he seemed pretty dodgy to me.'",
                     "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
                     ],
         option_text_1: "Seemed dodgy?",
@@ -439,7 +438,7 @@ const data = {
         option_text_2: "Do you think he killed Sharon?",
         option_2_path: "speculation_nation",
     },
-
+// Joel if you are reading this, I would like to apologise for my naming conventions. Except delinquent_rises that was fire
     shopping_spree:{
         title_text: "November 4th 1947, 02:45AM",
         body_text: [

@@ -25,7 +25,7 @@ return (
         <>
             <div className="bg-skyline bg-no-repeat bg-cover bg-center h-screen w-screen text-white flex flex-wrap justify-center">
                     <NavBar/>
-                <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl"> 
+                <div className="bg-Beige w-8/12 h-4/6 border-4 border-black font-typewriter text-black text-2xl flex flex-wrap rounded-xl overflow-y-auto"> 
                     <h1 className="w-full px-8 py-6 text-3xl">
                     {newText.title_text}
                     </h1>
