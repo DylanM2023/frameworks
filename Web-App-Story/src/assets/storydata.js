@@ -427,6 +427,45 @@ const data = {
         option_2_path: "speculation_nation",
     },
 
+    speculation_nation:{
+        title_text: "November 4th 1947, 02:53AM",
+        body_text: [
+                    "TRANSCRIPT: You:'Did you see anything strange the night Sharon died.' Karen:'There was this delinquent. I am not trying to speculate but he seemed pretty dodgy to me.'",
+                    "You:'Do you think he killed Sharon?' Karen:'He seemed plenty dangerous to me. I don't want to speculate too much but my money is on him being the filthy little killer.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
+                    ],
+        option_text_1: "So you do think he did this?",
+        option_1_path: "repeating_questions",
+        option_text_2: "He seemed dangerous?",
+        option_2_path: "lazy_writing",
+    },
+
+    repeating_questions:{
+        title_text: "November 4th 1947, 02:56AM",
+        body_text: [
+                    "TRANSCRIPT: You:'Do you think he killed Sharon?' Karen:'He seemed plenty dangerous to me. I don't want to speculate too much but my money is on him being the filthy little killer.'",
+                    "You:'So you do think he did this?' Karen:'Well he had a knife! He was waving around shouting nonsense. Also you know how the street kids are he is more than capable of murder.' You:'I see, well that's all we have time for Karen.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
+                    ],
+        option_text_1: "Leave Karen",
+        option_1_path: null,
+        option_text_2: "Leave Karen",
+        option_2_path: null,
+    },
+
+    lazy_writing:{
+        title_text: "November 4th 1947, 02:56AM",
+        body_text: [
+                    "TRANSCRIPT: You:'Do you think he killed Sharon?' Karen:'He seemed plenty dangerous to me. I don't want to speculate too much but my money is on him being the filthy little killer.'",
+                    "You:'He seemed dangerous?' Karen:'Well he had a knife! He was waving around shouting nonsense. Also you know how the street kids are he is more than capable of murder.' You:'I see, well that's all we have time for Karen.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
+                    ],
+        option_text_1: "Leave Karen",
+        option_1_path: null,
+        option_text_2: "Leave Karen",
+        option_2_path: null,
+    },
+
     vandalism_king:{
         title_text: "November 4th 1947, 02:53AM",
         body_text: [
@@ -444,7 +483,7 @@ const data = {
         title_text: "November 4th 1947, 02:56AM",
         body_text: [
                     "TRANSCRIPT: You:'How exactly did he seem 'Dodgy'?' Karen:'Well he was vandalising property and being very anti-social. He seemed pretty dangerous to me.'",
-                    "You:'He seemed dangerous?' Karen:'Well he had a knife! He was waving around shouting nonsense. Also you know how the street kids are he is more than capable of murder.'",
+                    "You:'He seemed dangerous?' Karen:'Well he had a knife! He was waving around shouting nonsense. Also you know how the street kids are he is more than capable of murder.' You:'I see, well that's all we have time for Karen.'",
                     "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
                     ],
         option_text_1: "Leave Karen",

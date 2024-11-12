@@ -19,7 +19,7 @@ const Menu = () => {
                 </div>
                 <div className="w-6/12 grow font-typewriter text-white text-5xl flex flex-wrap"> 
                     <div className="w-full h-6"></div>
-                    <button className="bg-black h-1/6 w-full text-white border-4 border-white text-5xl rounded-xl p-10" onClick={startGame}>Start Game</button>
+                    <button className="bg-black h-1/6 w-full flex justify-center items-center text-white border-4 border-white text-5xl rounded-xl p-10" onClick={startGame}>Start Game</button>
                     <div className="bg-black h-1/6 w-full text-black border-4 border-white flex flex-wrap flex-col items-center rounded-xl p-1">
                         <a className="flex flex-row bg-black text-white grow justify-center items-center text-5xl p-1 w-full" href="https://github.com/DylanM2023/frameworks/" target="_blank">GitHub</a>
                     </div>
