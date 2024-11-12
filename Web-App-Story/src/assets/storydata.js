@@ -440,19 +440,31 @@ const data = {
         option_2_path: "more_speculation",
     },
 
+    more_speculation:{
+        title_text: "November 4th 1947, 02:56AM",
+        body_text: [
+                    "TRANSCRIPT: You:'How exactly did he seem 'Dodgy'?' Karen:'Well he was vandalising property and being very anti-social. He seemed pretty dangerous to me.'",
+                    "You:'He seemed dangerous?' Karen:'Well he had a knife! He was waving around shouting nonsense. Also you know how the street kids are he is more than capable of murder.'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
+                    ],
+        option_text_1: "Leave Karen",
+        option_1_path: null,
+        option_text_2: "Leave Karen",
+        option_2_path: null,
+    },
+
     knife_crime:{
         title_text: "November 4th 1947, 02:56AM",
         body_text: [
                     "TRANSCRIPT: You:'How exactly did he seem 'Dodgy'?' Karen:'Well he was vandalising property and being very anti-social. He seemed pretty dangerous to me.'",
-                    "You:'He seemed dangerous?'",
+                    "You:'He seemed dangerous?' Karen:'Well he had a knife! He was waving around shouting nonsense. Also you know how the street kids are he is more than capable of murder.'",
                     "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
                     ],
-        option_text_1: "He seemed dangerous?",
-        option_1_path: "knife_crime",
-        option_text_2: "Do you think he killed Sharon?",
-        option_2_path: "more_speculation",
+        option_text_1: "Leave Karen",
+        option_1_path: null,
+        option_text_2: "Leave Karen",
+        option_2_path: null,
     },
-
 // Joel if you are reading this, I would like to apologise for my naming conventions. Except delinquent_rises that was fire
     shopping_spree:{
         title_text: "November 4th 1947, 02:45AM",

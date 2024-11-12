@@ -39,9 +39,8 @@ return (
                         {newText.body_text[2]}
                     </p>
                 </div>
-                <div className="w-8/12 p-4 flex justify-center ">
+                <div className="w-8/12 p-4 flex justify-center gap-24">
                     <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>choice_button(newText.option_1_path)}>{newText.option_text_1}</button>
-                    <div className="w-2/6"></div>
                     <button className="w-2/6 border-2 text-4xl border-white bg-black text-white font-heading rounded-xl" onClick={()=>choice_button(newText.option_2_path)}>{newText.option_text_2}</button>
                 </div>
             </div>
