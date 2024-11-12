@@ -428,16 +428,31 @@ const data = {
     },
 
     vandalism_king:{
-        title_text: "November 4th 1947, 02:45AM",
+        title_text: "November 4th 1947, 02:53AM",
         body_text: [
                     "TRANSCRIPT: You:'Did you see anything strange the night Sharon died.' Karen:'There was this delinquent. I am not trying to speculate but he seemed pretty dodgy to me.'",
+                    "You:'How exactly did he seem 'Dodgy'?' Karen:'Well he was vandalising property and being very anti-social. He seemed pretty dangerous to me.'",
                     "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
                     ],
-        option_text_1: "Seemed dodgy?",
-        option_1_path: "vandalism_king",
+        option_text_1: "He seemed dangerous?",
+        option_1_path: "knife_crime",
         option_text_2: "Do you think he killed Sharon?",
-        option_2_path: "speculation_nation",
+        option_2_path: "more_speculation",
     },
+
+    knife_crime:{
+        title_text: "November 4th 1947, 02:56AM",
+        body_text: [
+                    "TRANSCRIPT: You:'How exactly did he seem 'Dodgy'?' Karen:'Well he was vandalising property and being very anti-social. He seemed pretty dangerous to me.'",
+                    "You:'He seemed dangerous?'",
+                    "NOTES: Karen's smile is either incredibly creepy or very wholesome, I am not too sure.",
+                    ],
+        option_text_1: "He seemed dangerous?",
+        option_1_path: "knife_crime",
+        option_text_2: "Do you think he killed Sharon?",
+        option_2_path: "more_speculation",
+    },
+
 // Joel if you are reading this, I would like to apologise for my naming conventions. Except delinquent_rises that was fire
     shopping_spree:{
         title_text: "November 4th 1947, 02:45AM",
